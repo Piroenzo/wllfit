@@ -29,9 +29,6 @@ Diseñada con **React + Vite + Tailwind + Framer Motion**, ofrece un dashboard a
 <img width="1024" height="1024" alt="ChatGPT Image 29 oct 2025, 03_20_01" src="https://github.com/user-attachments/assets/6ffe928a-2a78-4f52-a50d-4481f1cc5dbd" />
 
 
-### 💻 Dashboard principal
-![WellFit Dashboard Preview](https://github.com/Piroenzo/wllfit/assets/placeholder-dashboard.png)
-
 
 
 ---
