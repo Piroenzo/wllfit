@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --color-primary: #22c55e;
+  --color-secondary: #3b82f6;
+  --color-dark: #0f172a;
+  --color-light: #1e293b;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at top left, #0f172a, #020617 60%);
+  color: #f9fafb;
+  min-height: 100vh;
+}
+@layer utilities {
+  @media (max-width: 768px) {
+    .scroll-section {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .scroll-item {
+      min-width: 85%;
+      scroll-snap-align: center;
+    }
+  }
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* 🔧 Oculta el scroll horizontal visualmente sin afectar el swipe */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: hidden;
+}
